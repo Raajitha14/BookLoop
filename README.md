@@ -101,16 +101,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Thanks to all the open-source libraries and tools that made this project possible
 - Special thanks to the MERN stack community for their excellent documentation and support
 
-## Contact
 
-If you have any questions or suggestions, please feel free to reach out to us at support@bookloop.com.
 
 Happy reading and trading!
 =======
-# BookLoop
-BookLoop is a full-stack MERN web application designed to help students buy, sell, or rent academic books easily within their college network. It features secure user authentication, real-time messaging, and efficient book listing management.
->>>>>>> ad2e1732a92504c88496923c5a489eb7622ec5b9
-=======
-# BookLoop
-BookLoop is a full-stack MERN web application designed to help students buy, sell, or rent academic books easily within their college network. It features secure user authentication, real-time messaging, and efficient book listing management.
->>>>>>> ad2e1732a92504c88496923c5a489eb7622ec5b9
+
