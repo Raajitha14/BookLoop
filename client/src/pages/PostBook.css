@@ -1,0 +1,75 @@
+.post-book-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.post-book-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.post-book-header h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.post-book-header p {
+  color: var(--gray-color);
+}
+
+.post-book-form {
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input {
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+.rental-details {
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .post-book-form {
+    padding: 1.5rem;
+  }
+
+  .radio-group {
+    gap: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column-reverse;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}

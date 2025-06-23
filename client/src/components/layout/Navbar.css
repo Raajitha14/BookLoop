@@ -1,0 +1,173 @@
+.navbar {
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 50px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar-logo i {
+  margin-right: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 1.5rem;
+}
+
+.nav-menu a {
+  color: var(--dark-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-menu a:hover {
+  color: var(--primary-color);
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: var(--dark-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn:hover {
+  color: var(--danger-color);
+}
+
+.logout-btn i {
+  margin-right: 0.5rem;
+}
+
+.user-welcome {
+  display: none;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    background-color: var(--white-color);
+  }
+
+  .nav-menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+  }
+
+  .nav-menu li {
+    margin: 1rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .user-welcome {
+    display: block;
+  }
+}
+
+.profile-container {
+  position: relative;
+  /* margin-left: auto; */
+  margin-right: 1rem;
+}
+
+.profile-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 180px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 10px;
+}
+
+.profile-info {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+}
+
+.profile-info strong {
+  display: block;
+  font-size: 14px;
+}
+
+.profile-info small {
+  font-size: 12px;
+  color: #666;
+}
+

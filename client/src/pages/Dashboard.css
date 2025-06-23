@@ -1,0 +1,210 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  color: var(--primary-color);
+}
+
+.dashboard-tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--gray-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.tab-btn:hover {
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.no-books-message {
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.no-books-message p {
+  margin-bottom: 1.5rem;
+  color: var(--gray-color);
+  font-size: 1.1rem;
+}
+
+.books-table-container {
+  overflow-x: auto;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.books-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.books-table th,
+.books-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.books-table th {
+  background-color: var(--light-gray);
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.books-table tr:last-child td {
+  border-bottom: none;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+}
+
+.book-thumbnail {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.book-info h4 {
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.book-info p {
+  color: var(--gray-color);
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-available {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.status-sold {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+.status-rented {
+  background-color: #fff8e1;
+  color: #ff6f00;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+  color: var(--gray-color);
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.edit-btn:hover {
+  color: var(--primary-color);
+  background-color: rgba(74, 111, 165, 0.1);
+}
+
+.toggle-btn:hover {
+  color: var(--info-color);
+  background-color: rgba(23, 162, 184, 0.1);
+}
+
+.sold-btn:hover {
+  color: var(--success-color);
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.delete-btn:hover {
+  color: var(--danger-color);
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .dashboard-tabs {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .books-table th,
+  .books-table td {
+    padding: 0.75rem;
+  }
+
+  .book-thumbnail {
+    width: 40px;
+    height: 60px;
+  }
+
+  .book-info h4 {
+    font-size: 0.9rem;
+  }
+
+  .action-btn {
+    width: 28px;
+    height: 28px;
+    margin-right: 0.25rem;
+  }
+}

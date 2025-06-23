@@ -1,0 +1,102 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem 1rem;
+  background-color: var(--light-color);
+}
+
+.auth-form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+
+.auth-form-container h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.auth-subtitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--gray-color);
+}
+
+.auth-form {
+  margin-bottom: 1.5rem;
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: var(--gray-color);
+}
+
+.auth-divider::before,
+.auth-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--border-color);
+}
+
+.auth-divider span {
+  padding: 0 1rem;
+}
+
+.btn-google {
+  background-color: #db4437;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-google:hover {
+  background-color: #c53929;
+}
+
+.btn-google i {
+  margin-right: 0.5rem;
+}
+
+.auth-redirect {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--gray-color);
+}
+
+.auth-redirect a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.auth-redirect a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 576px) {
+  .auth-form-container {
+    padding: 1.5rem;
+  }
+
+  .auth-form-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .auth-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+.step:hover .step-icon  {
+  background-color: var(--primary-color);
+  color: #fff;
+}

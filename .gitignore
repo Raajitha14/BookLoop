@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build and logs
+build/
+dist/
+.next/
+.env
+.DS_Store
+*.log
+
+# OS files
+Thumbs.db
+desktop.ini
