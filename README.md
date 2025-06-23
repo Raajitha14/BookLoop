@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BookLoop - Second-hand Book Marketplace
 
 BookLoop is a MERN stack application that allows users to buy, sell, or rent second-hand books. It includes features such as user authentication, book listings, real-time chat, and more.
@@ -111,3 +112,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 If you have any questions or suggestions, please feel free to reach out to us at support@bookloop.com.
 
 Happy reading and trading!
+=======
+# BookLoop
+BookLoop is a full-stack MERN web application designed to help students buy, sell, or rent academic books easily within their college network. It features secure user authentication, real-time messaging, and efficient book listing management.
+>>>>>>> ad2e1732a92504c88496923c5a489eb7622ec5b9
