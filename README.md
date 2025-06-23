@@ -85,13 +85,6 @@ BookLoop is a MERN stack application that allows users to buy, sell, or rent sec
 
 3. Open your browser and navigate to `http://localhost:3000`
 
-## Deployment
-
-The application can be deployed to platforms like Heroku, Vercel, or any other hosting service that supports Node.js applications.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contributing
 
